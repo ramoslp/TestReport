@@ -4,10 +4,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import br.unipe.common.BasePage;
 import br.unipe.test.BaseTestCase;
 
 public class DesafioSeleniumTest extends BaseTestCase{
 	
+	BasePage basePage = new BasePage();
 	DesafioSeleniumPage desafioSeleniumPage = new DesafioSeleniumPage();
 	
 	@Before
@@ -21,8 +23,13 @@ public class DesafioSeleniumTest extends BaseTestCase{
 	}
 	
 	@Test
-	public void desafioSelenium() {
-		desafioSeleniumPage.desafioSelenium();
+	public void primeiroDesafio() {
+		desafioSeleniumPage.primeiroDesafio();
+	}
+	
+	@Test
+	public void segundoDesafio() {
+		desafioSeleniumPage.segundoDesafio();
 	}
 
 }

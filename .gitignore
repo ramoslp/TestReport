@@ -1,0 +1,17 @@
+target/
+.svn/
+*~
+.settings*
+bin/
+dist/
+*.class
+*classes/
+WEB-INF/classes/*
+*.war
+*.log
+*.classpath
+*.project
+src/test/resources/Evidencias
+src/test/resources/reports
+*.jpeg
+*.jpg

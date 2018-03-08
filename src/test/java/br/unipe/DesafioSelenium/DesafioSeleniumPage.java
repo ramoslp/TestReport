@@ -1,9 +1,17 @@
 package br.unipe.DesafioSelenium;
 
-public class DesafioSeleniumPage {
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import br.unipe.common.BasePage;
+
+public class DesafioSeleniumPage extends BasePage {
 	
-	public void desafioSelenium() {
-		
+	public void primeiroDesafio() {
+		assertTrue(true);
 	}
 
+	public void segundoDesafio() {
+		assertTrue(false);
+	}
+	
 }
