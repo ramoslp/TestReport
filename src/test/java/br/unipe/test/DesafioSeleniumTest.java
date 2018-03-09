@@ -1,11 +1,12 @@
-package br.unipe.DesafioSelenium;
+package br.unipe.test;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.unipe.common.BasePage;
-import br.unipe.test.BaseTestCase;
+import br.unipe.common.Parametro;
+import br.unipe.pages.BasePage;
+import br.unipe.pages.DesafioSeleniumPage;
 
 public class DesafioSeleniumTest extends BaseTestCase{
 	
@@ -15,6 +16,7 @@ public class DesafioSeleniumTest extends BaseTestCase{
 	@Before
 	public void before() {
 		System.out.println("=================================================================");
+		Parametro.CONTADOR_SCREENSHOT= "000";
 	}
 	
 	@After
@@ -24,6 +26,7 @@ public class DesafioSeleniumTest extends BaseTestCase{
 	
 	@Test
 	public void primeiroDesafio() {
+		Parametro.METHOD_NAME_TEST = "Primeiro Desafio";
 		desafioSeleniumPage.primeiroDesafio();
 	}
 	
